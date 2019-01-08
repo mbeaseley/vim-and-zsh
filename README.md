@@ -64,17 +64,17 @@ Oh-my-zsh setup:
    sudo apt-get update && sudo apt-get install build-essential gcc g++ make nginx mysql-server ruby ruby-bundler nodejs git yarn ruby-dev composer vagrant
    ```
    This would of installed the following: 
-   *Ubuntu’s build toolchain, so you can build some tools from source if needed, along with a bunch of other handy stuff
-   *Added nodejs repository to apt-get
-   *nginx web server
-   *mysql database
-   *Ruby (I use this for Jekyll and a few other projects)
-   *Ruby Bundler for Ruby packages as above
-   *Ruby dev for building native extensions
-   *Node + npm for… well, everything
-   *Git for versioning/cloning repositiories
-   *Zsh for a better shell setup
-   *Yarn for futuristic package management
+   * Ubuntu’s build toolchain, so you can build some tools from source if needed, along with a bunch of other handy stuff
+   * Added nodejs repository to apt-get
+   * nginx web server
+   * mysql database
+   * Ruby (I use this for Jekyll and a few other projects)
+   * Ruby Bundler for Ruby packages as above
+   * Ruby dev for building native extensions
+   * Node + npm for… well, everything
+   * Git for versioning/cloning repositiories
+   * Zsh for a better shell setup
+   * Yarn for futuristic package management
 
 6. For something extra, install Gulp:
    ```bash
@@ -102,6 +102,6 @@ Oh-my-zsh setup:
 
 
 For note: more information use the following instruction: 
-*Hyper - https://hyper.is/
-*Zsh - https://github.com/robbyrussell/oh-my-zsh
-*Installation Article - https://char.gd/blog/2017/how-to-set-up-the-perfect-modern-dev-environment-on-windows
+* Hyper - https://hyper.is/
+* Zsh - https://github.com/robbyrussell/oh-my-zsh
+* Installation Article - https://char.gd/blog/2017/how-to-set-up-the-perfect-modern-dev-environment-on-windows
