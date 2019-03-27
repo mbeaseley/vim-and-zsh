@@ -99,7 +99,6 @@ PACKAGES=(
     the_silver_searcher
     tmux
     tree
-    vim
     wget
 )
 
@@ -142,7 +141,24 @@ RUBY_GEMS=(
 )
 sudo gem install ${RUBY_GEMS[@]}
 
+echo "Checking if NPM needs updating..."
+npm install -g npm
+
 echo "Installing global npm packages..."
 npm install marked -g
+
+echo 'export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/file-formula/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/perl@5.18/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/ncurses/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/apr/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/apr-util/bin:$PATH"' >> ~/.bash_profile
+echo 'export PATH="/usr/local/opt/unzip/bin:$PATH"' >> ~/.bash_profile
+echo 'export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"' >> ~/.bash_profile
+echo 'export MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"' >> ~/.bash_profile
+
+echo "Creating folder structure..."
+[[ ! -d workspace ]] && mkdir ~/Documents/workspace
 
 echo "Dev tools and packages installation complete!"
