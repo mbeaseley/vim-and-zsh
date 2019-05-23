@@ -16,8 +16,6 @@ else
   xcode-select --install
 fi
 
-xcode-select --version
-
 # Update homebrew recipes
 echo "Checking if brew is up-to-date";
 brew update;
@@ -125,6 +123,9 @@ CASKS=(
 echo "Installing cask apps.."
 brew cask install ${CASKS[@]}
 
+echo "Installing vim..."
+brew install vim 
+
 echo "Installing Python packages..."
 PYTHON_PACKAGES=(
     ipython
@@ -160,5 +161,19 @@ echo 'export MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"' >> ~/.bash_p
 
 echo "Creating folder structure..."
 [[ ! -d workspace ]] && mkdir ~/Documents/workspace
+                  
+echo "               ,o888888o.    "
+echo "              8888      88.   "
+echo "             8 8888       88.  "
+echo "            88 8888           "
+echo "            88 8888           "
+echo "            88 8888           "
+echo "            88 8888           "
+echo "             8 8888       88. "
+echo "              8888      88'  "
+echo "               8888888P'     "
+
 
 echo "Dev tools and packages installation complete!"
+echo "Restarting Terminal for all installation to work correctly"
+exec -l $SHELL
