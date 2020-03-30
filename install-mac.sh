@@ -98,6 +98,7 @@ PACKAGES=(
     tmux
     tree
     wget
+    watchman
 )
 
 echo "Installing packages..."
